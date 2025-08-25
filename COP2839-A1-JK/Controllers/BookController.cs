@@ -13,8 +13,6 @@ namespace COP2839_A1_JK.Controllers
 				new Book { Id = 2, Title = "Head First C#", Author = "Stellman & Greene" }
 			};
 
-		// GET: /Book/
-		
 		public IActionResult Index()
 		{
 			return View(books);
