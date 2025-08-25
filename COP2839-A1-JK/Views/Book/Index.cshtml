@@ -1,0 +1,19 @@
+﻿@model List<Book>
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<a asp-controller="Book"
+   asp-action="AddBook"
+>Add a new book</a>
+  
+<ul>
+	@foreach (var book in Model)
+	{
+		<li>
+			@book.Title by @book.Author
+		</li>
+	}
+</ul>
